@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -80,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   overflow-x: hidden;
+  font-family: Roboto;
 }
 
 .wrapper {
@@ -109,10 +111,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: none;
+          flex-direction: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -146,7 +148,6 @@ body {
 }
 
 .header__aboutus {
-  font-family: Roboto;
   font-size: 15px;
   line-height: 15px;
   letter-spacing: none;
@@ -171,7 +172,6 @@ body {
 }
 
 .header__rightside a {
-  font-family: Roboto;
   font-size: 15px;
   line-height: 15px;
   letter-spacing: none;

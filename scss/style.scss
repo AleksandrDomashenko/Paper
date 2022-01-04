@@ -1,5 +1,5 @@
 //подключение шрифтов
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 //нулевой стиль
 @import 'nulestyle.scss';
@@ -11,6 +11,7 @@
 body {
   height: 100%;
   overflow-x: hidden;
+  font-family: Roboto;
 }
 // wrapper
 .wrapper {
@@ -22,7 +23,7 @@ body {
   flex: 1 1 auto;
 }
 .header {
-  @include flex(flex, row, space-between, center);
+  @include flex(flex, none, space-between, center);
   width: 95vw;
   margin: 30px auto 0 auto;
   &__leftside {
@@ -35,7 +36,6 @@ body {
   }
 
   &__aboutus {
-    font-family: Roboto;
     @include font(15px, 15px, none, #5c5c5c, none);
     a {
       color: #5c5c5c;
@@ -43,9 +43,11 @@ body {
   }
 
   &__center {
+    // позиционирование лого по центру
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
+    //................................
     img {
       width: 120px;
       height: 56px;
@@ -54,7 +56,6 @@ body {
 
   &__rightside {
     a {
-      font-family: Roboto;
       @include font(15px, 15px, none, #5c5c5c, none);
       margin-right: 20px;
       &:last-child {
