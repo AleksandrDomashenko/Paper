@@ -1,0 +1,77 @@
+//подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//нулевой стиль
+@import 'nulestyle.scss';
+//файл с миксинами
+@import 'mixin.scss';
+//переменные
+//шаблоны
+////////////////////////////////////////
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+// wrapper
+.wrapper {
+  min-height: 100vh; //full screen
+  @include flex(flex, column, none, none);
+}
+// header
+.content {
+  flex: 1 1 auto;
+}
+.header {
+}
+
+// first frame
+.first-frame {
+}
+
+// second frame
+.second-frame {
+}
+
+// three frame
+.three-frame {
+}
+
+// four frame
+.four-frame {
+}
+
+// five frame
+.five-frame {
+}
+
+// six frame
+.six-frame {
+}
+
+// seven-frame
+.seven-frame {
+}
+
+// eight-frame
+.eight-frame {
+}
+
+// ninth frame
+.ninth-frame {
+}
+
+// tenth frame
+.tenth-frame {
+}
+
+// eleven frame
+.eleven-frame {
+}
+
+// twelfth frame
+.twelfth-frame {
+}
+
+// footer
+.footer {
+}
