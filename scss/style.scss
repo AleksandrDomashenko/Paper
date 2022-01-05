@@ -183,6 +183,28 @@ body {
 
 // four frame
 .four-frame {
+  background-color: #161616;
+  &__column {
+    @include flex(flex, column, none, center);
+    text-align: center;
+    padding-top: 135px;
+  }
+
+  &__title {
+    @include font(54px, 54px, 1px, #fff, none);
+  }
+
+  &__subtitle {
+    margin-top: 35px;
+    @include font(20px, 28px, none, #fff, none);
+  }
+
+  &__img {
+    margin-top: 100px;
+    img {
+      width: 100vw;
+    }
+  }
 }
 
 // five frame
