@@ -209,34 +209,78 @@ body {
 
 // five frame
 .five-frame {
+  margin-top: 85px;
+  &__row {
+    @include flex(flex, none, space-around, center);
+  }
+
+  &__img {
+    border: 30px solid #000;
+    border-radius: 20px;
+  }
+
+  &__subtitle {
+    margin-top: 35px;
+  }
+}
+.title {
+  @include font(52px, 54px, 1px, #161616, none);
+}
+.subtitle {
+  @include font(20px, 28px, none, #161616, none);
 }
 
 // six frame
 .six-frame {
+  margin-top: 85px;
+  &__img {
+    border: 30px solid #000;
+    border-radius: 20px;
+    margin-right: -210px;
+  }
+
+  &__imgtel {
+    position: relative;
+    top: 200px;
+    right: 540px;
+  }
+
+  &__row {
+    @include flex(flex, none, space-around, center);
+  }
+
+  &__subtitle {
+    margin-top: 35px;
+  }
 }
 
 // seven-frame
 .seven-frame {
-}
+  text-align: center;
+  height: 40vh;
 
-// eight-frame
-.eight-frame {
-}
+  &__img {
+    margin-top: 20vh;
+    margin-bottom: 26px;
+  }
 
-// ninth frame
-.ninth-frame {
-}
+  &__text {
+    @include font(16px, 20px, none, #161616, none);
+    margin-bottom: 31px;
+  }
 
-// tenth frame
-.tenth-frame {
-}
+  &__download {
+    padding: 4px 28px;
 
-// eleven frame
-.eleven-frame {
-}
+    background-color: #161616;
+    border-radius: 20px;
 
-// twelfth frame
-.twelfth-frame {
+    width: 10vw;
+    margin: 0 auto;
+    a {
+      @include font(15px, 19px, none, #fff, 700);
+    }
+  }
 }
 
 // footer
