@@ -39,6 +39,9 @@ body {
     @include font(15px, 15px, none, #5c5c5c, none);
     a {
       color: #5c5c5c;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -58,12 +61,20 @@ body {
     a {
       @include font(15px, 15px, none, #5c5c5c, none);
       margin-right: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
       &:last-child {
         background-color: #000;
         color: #fff;
         border-radius: 15px;
         padding: 10px 10px;
         margin-right: 0;
+        &:hover {
+          background-color: #fff;
+          color: #000;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -71,6 +82,58 @@ body {
 
 // first frame
 .first-frame {
+  &__row {
+    margin-top: 155px;
+    @include flex(flex, row, space-between, center);
+  }
+
+  &__column {
+    margin-right: 20px;
+    margin-left: 40px;
+    min-width: 380px;
+  }
+
+  &__title {
+    @include font(80px, 80px, 1px, #161616, none);
+  }
+
+  &__subtitle {
+    margin-top: 36px;
+    @include font(20px, 28px, none, #161616, none);
+  }
+
+  &__buttons {
+    margin-top: 40px;
+    @include flex(flex, none, none, center);
+  }
+
+  &__download {
+    background-color: #000;
+    padding: 13px 28px 16px 28px;
+    margin-right: 10px;
+    border-radius: 25px;
+    a {
+      color: #fff;
+    }
+  }
+
+  &__explore {
+    border: 2px solid #161616;
+    border-radius: 25px;
+    padding: 13px 28px 16px 28px;
+    a {
+      color: #161616;
+    }
+  }
+
+  &__image {
+    border: 30px solid #000;
+    border-radius: 30px;
+    img {
+      // min-width: 100vw;
+      min-height: 20vh;
+    }
+  }
 }
 
 // second frame
@@ -139,6 +202,9 @@ body {
       @include font(none, 15px, none, none, none);
       a {
         color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       margin-bottom: 24px;
     }
@@ -165,6 +231,9 @@ body {
         @include font(none, 18px, none, #fff, none);
         color: #fff;
         margin-bottom: 56px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -191,7 +260,7 @@ body {
     select {
       @include font(13px, 14px, none, #fff, none);
       background-color: #353535;
-      padding: 5px 10px 5px 60px;
+      padding: 5px 10px 5px 40px;
       border-radius: 10px;
       margin-right: 24px;
     }
@@ -204,7 +273,7 @@ body {
       height: 16px;
       position: relative;
       top: 0px;
-      left: 40px;
+      left: 30px;
     }
   }
 
