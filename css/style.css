@@ -320,8 +320,8 @@ body {
 
 .three-frame {
   padding-top: 80px;
-  min-height: 100vh;
-  background: url(../img/three_frame/02.png) 50% 694px/100vw 174px no-repeat, url(../img/three_frame/01.png) 0 0/100vw 868px no-repeat;
+  min-height: 80vh;
+  background: url(../img/three_frame/02.png) 50% 100%/100vw auto no-repeat, url(../img/three_frame/01.png) 0 0/100vw auto no-repeat;
 }
 
 .three-frame__column {
