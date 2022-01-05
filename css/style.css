@@ -223,6 +223,7 @@ body {
   margin-right: 20px;
   margin-left: 40px;
   min-width: 380px;
+  max-width: 390px;
 }
 
 .first-frame__title {
@@ -283,10 +284,38 @@ body {
 .first-frame__image {
   border: 30px solid #000;
   border-radius: 30px;
+  position: relative;
+  right: -150px;
 }
 
-.first-frame__image img {
-  min-height: 20vh;
+.second-frame {
+  margin-top: 200px;
+  background-image: url(../img/second_frame/01.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 810px;
+}
+
+.second-frame__column {
+  margin-left: 80px;
+  padding-top: 256px;
+  padding-bottom: 261px;
+}
+
+.second-frame__title {
+  font-size: 49px;
+  line-height: 54px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: none;
+  margin-bottom: 46px;
+}
+
+.second-frame__subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: none;
+  color: #fff;
+  font-weight: none;
 }
 
 .footer {

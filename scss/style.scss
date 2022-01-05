@@ -91,6 +91,7 @@ body {
     margin-right: 20px;
     margin-left: 40px;
     min-width: 380px;
+    max-width: 390px;
   }
 
   &__title {
@@ -129,15 +130,32 @@ body {
   &__image {
     border: 30px solid #000;
     border-radius: 30px;
-    img {
-      // min-width: 100vw;
-      min-height: 20vh;
-    }
+    position: relative;
+    right: -150px;
   }
 }
 
 // second frame
 .second-frame {
+  margin-top: 200px;
+  background-image: url(../img/second_frame/01.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 810px;
+
+  &__column {
+    margin-left: 80px;
+    padding-top: 256px;
+    padding-bottom: 261px;
+  }
+
+  &__title {
+    @include font(49px, 54px, 1px, #fff, none);
+    margin-bottom: 46px;
+  }
+
+  &__subtitle {
+    @include font(20px, 28px, none, #fff, none);
+  }
 }
 
 // three frame
