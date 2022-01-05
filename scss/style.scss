@@ -160,6 +160,25 @@ body {
 
 // three frame
 .three-frame {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: url(../img/three_frame/02.png) 50% 694px/ 100vw 174px no-repeat,
+    url(../img/three_frame/01.png) 0 0 / 100vw 868px no-repeat;
+
+  &__column {
+    @include flex(flex, column, none, center);
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 35px;
+    @include font(51px, 54px, 1px, #161616, none);
+  }
+
+  &__subtitle {
+    margin-top: 30px;
+    @include font(20px, 28px, none, #161616, none);
+  }
 }
 
 // four frame
