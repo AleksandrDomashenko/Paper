@@ -182,9 +182,30 @@ body {
 
   &__rowtwo {
     @include flex(flex, row, space-around, center);
+    padding-top: 25px;
+    padding-bottom: 24px;
   }
 
   &__selectlang {
+    @include flex(flex, none, none, center);
+    select {
+      @include font(13px, 14px, none, #fff, none);
+      background-color: #353535;
+      padding: 5px 10px 5px 60px;
+      border-radius: 10px;
+      margin-right: 24px;
+    }
+    &:before {
+      content: '';
+      background-image: url(../img/footer/08.png);
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 0px;
+      left: 40px;
+    }
   }
 
   &__copyright {
@@ -192,5 +213,9 @@ body {
   }
 
   &__social {
+    img {
+      width: 38px;
+      height: 28px;
+    }
   }
 }
