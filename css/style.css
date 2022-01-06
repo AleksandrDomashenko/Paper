@@ -463,18 +463,6 @@ body {
   margin-top: 85px;
 }
 
-.six-frame__img {
-  border: 30px solid #000;
-  border-radius: 20px;
-  margin-right: -210px;
-}
-
-.six-frame__imgtel {
-  position: relative;
-  top: 200px;
-  right: 540px;
-}
-
 .six-frame__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,6 +480,18 @@ body {
 
 .six-frame__subtitle {
   margin-top: 35px;
+}
+
+.six-frame__img {
+  border: 30px solid #000;
+  border-radius: 20px;
+  margin-right: -210px;
+}
+
+.six-frame__imgtel {
+  position: relative;
+  top: 200px;
+  right: 540px;
 }
 
 .seven-frame {

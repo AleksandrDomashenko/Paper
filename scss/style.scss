@@ -233,6 +233,15 @@ body {
 // six frame
 .six-frame {
   margin-top: 85px;
+
+  &__row {
+    @include flex(flex, none, space-around, center);
+  }
+
+  &__subtitle {
+    margin-top: 35px;
+  }
+
   &__img {
     border: 30px solid #000;
     border-radius: 20px;
@@ -243,14 +252,6 @@ body {
     position: relative;
     top: 200px;
     right: 540px;
-  }
-
-  &__row {
-    @include flex(flex, none, space-around, center);
-  }
-
-  &__subtitle {
-    margin-top: 35px;
   }
 }
 
