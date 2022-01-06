@@ -160,7 +160,7 @@ body {
 // three frame
 .three-frame {
   padding-top: 80px;
-  min-height: 80vh;
+  min-height: 870px;
   background: url(../img/three_frame/02.png) 50% 100%/ 100vw auto no-repeat,
     url(../img/three_frame/01.png) 0 0 / 100vw auto no-repeat;
 
@@ -257,16 +257,15 @@ body {
 // seven-frame
 .seven-frame {
   text-align: center;
-  height: 40vh;
+  // height: auto;
 
   &__img {
-    margin-top: 20vh;
+    padding-top: 200px;
     margin-bottom: 26px;
   }
 
   &__text {
     @include font(16px, 20px, none, #161616, none);
-    margin-bottom: 31px;
   }
 
   &__download {
@@ -275,8 +274,8 @@ body {
     background-color: #161616;
     border-radius: 20px;
 
-    width: 10vw;
-    margin: 0 auto;
+    width: 127px;
+    margin: 31px auto 215px auto;
     a {
       @include font(15px, 19px, none, #fff, 700);
     }

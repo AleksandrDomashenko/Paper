@@ -328,7 +328,7 @@ body {
 
 .three-frame {
   padding-top: 80px;
-  min-height: 80vh;
+  min-height: 870px;
   background: url(../img/three_frame/02.png) 50% 100%/100vw auto no-repeat, url(../img/three_frame/01.png) 0 0/100vw auto no-repeat;
 }
 
@@ -496,11 +496,10 @@ body {
 
 .seven-frame {
   text-align: center;
-  height: 40vh;
 }
 
 .seven-frame__img {
-  margin-top: 20vh;
+  padding-top: 200px;
   margin-bottom: 26px;
 }
 
@@ -510,15 +509,14 @@ body {
   letter-spacing: none;
   color: #161616;
   font-weight: none;
-  margin-bottom: 31px;
 }
 
 .seven-frame__download {
   padding: 4px 28px;
   background-color: #161616;
   border-radius: 20px;
-  width: 10vw;
-  margin: 0 auto;
+  width: 127px;
+  margin: 31px auto 215px auto;
 }
 
 .seven-frame__download a {
