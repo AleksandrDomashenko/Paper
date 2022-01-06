@@ -89,6 +89,8 @@ h6 {
 
 body {
   font-family: Roboto;
+  min-width: 1470px;
+  padding: 0 15px;
 }
 
 .wrapper {
