@@ -328,7 +328,7 @@ body {
 
 .three-frame {
   padding-top: 80px;
-  min-height: 870px;
+  height: 60vw;
   background: url(../img/three_frame/02.png) 50% 100%/100vw auto no-repeat, url(../img/three_frame/01.png) 0 0/100vw auto no-repeat;
 }
 
