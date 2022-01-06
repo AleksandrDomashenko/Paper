@@ -29,7 +29,8 @@ aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -40,7 +41,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -57,7 +60,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -73,14 +77,17 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
 
 body {
-  height: 100%;
-  overflow-x: hidden;
   font-family: Roboto;
 }
 
@@ -99,6 +106,7 @@ body {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
+  overflow-x: hidden;
 }
 
 .content {

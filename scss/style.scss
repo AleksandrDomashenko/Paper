@@ -9,14 +9,13 @@
 //шаблоны
 ////////////////////////////////////////
 body {
-  height: 100%;
-  overflow-x: hidden;
   font-family: Roboto;
 }
 // wrapper
 .wrapper {
   min-height: 100vh; //full screen
   @include flex(flex, column, none, none);
+  overflow-x: hidden;
 }
 // header
 .content {
