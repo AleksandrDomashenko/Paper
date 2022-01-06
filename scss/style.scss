@@ -10,12 +10,13 @@
 ////////////////////////////////////////
 body {
   font-family: Roboto;
-  min-width: 1470px;
+  max-width: 1470px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 // wrapper
 .wrapper {
-  min-height: 100vh; //full screen
+  min-height: 100%; //full screen
   @include flex(flex, column, none, none);
   overflow-x: hidden;
 }
@@ -25,13 +26,14 @@ body {
 }
 .header {
   @include flex(flex, none, space-between, center);
-  width: 95vw;
+  // width: 95vw;
   margin: 30px auto 0 auto;
   &__leftside {
     @include flex(flex, none, none, center);
     img {
-      width: 45px;
-      height: 20px;
+      width: 100%;
+      max-width: 45px;
+      max-height: 20px;
       margin-right: 20px;
     }
   }
@@ -53,8 +55,9 @@ body {
     left: 50%;
     //................................
     img {
-      width: 120px;
-      height: 56px;
+      width: 100%;
+      max-width: 120px;
+      max-height: 56px;
     }
   }
 
@@ -133,6 +136,11 @@ body {
     border-radius: 30px;
     position: relative;
     right: -150px;
+    img {
+      width: 100%;
+      max-width: 905px;
+      max-height: 679px;
+    }
   }
 }
 
@@ -141,7 +149,7 @@ body {
   margin-top: 200px;
   background-image: url(../img/second_frame/01.png);
   background-repeat: no-repeat;
-  background-size: 100vw 810px;
+  background-size: 100% 810px;
 
   &__column {
     margin-left: 80px;
@@ -162,12 +170,14 @@ body {
 // three frame
 .three-frame {
   padding-top: 80px;
-  height: 60vw;
-  background: url(../img/three_frame/02.png) 50% 100%/ 100vw auto no-repeat,
-    url(../img/three_frame/01.png) 0 0 / 100vw auto no-repeat;
+  min-height: 948px;
+  background-image: url(../img/three_frame/01.png);
+  background-repeat: no-repeat;
+  background-size: 100% 948px;
+  min-height: 100%;
 
   &__column {
-    @include flex(flex, column, none, center);
+    @include flex(flex, column, space-between, center);
     text-align: center;
   }
 
@@ -179,6 +189,14 @@ body {
   &__subtitle {
     margin-top: 30px;
     @include font(20px, 28px, none, #161616, none);
+    margin-bottom: 515px;
+    flex: 1 1 auto;
+  }
+
+  &__pallet {
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -204,7 +222,7 @@ body {
     margin-top: 100px;
     margin-bottom: 50px;
     img {
-      width: 100vw;
+      width: 100%;
     }
   }
 }
@@ -219,6 +237,11 @@ body {
   &__img {
     border: 30px solid #000;
     border-radius: 20px;
+    img {
+      width: 100%;
+      max-width: 780px;
+      max-height: 585px;
+    }
   }
 
   &__subtitle {
@@ -248,19 +271,29 @@ body {
     border: 30px solid #000;
     border-radius: 20px;
     margin-right: -210px;
+    img {
+      width: 100%;
+      max-width: 780px;
+      max-height: 585px;
+    }
   }
 
   &__imgtel {
-    position: relative;
-    top: 200px;
-    right: 540px;
+    position: absolute;
+    transform: translateX(-55%);
+    left: 55%;
+    transform: translateY(55%);
+    img {
+      width: 100%;
+      max-width: 180px;
+      max-height: 367px;
+    }
   }
 }
 
 // seven-frame
 .seven-frame {
   text-align: center;
-  // height: auto;
 
   &__img {
     padding-top: 200px;
@@ -277,7 +310,7 @@ body {
     background-color: #161616;
     border-radius: 20px;
 
-    width: 127px;
+    max-width: 10%;
     margin: 31px auto 215px auto;
     a {
       @include font(15px, 19px, none, #fff, 700);
@@ -290,7 +323,7 @@ body {
   background-color: #161616;
   &__row {
     @include flex(flex, none, space-between, flex-start);
-    width: 1130px;
+    max-width: 90%;
     margin: 0 auto;
     padding-top: 80px;
   }
@@ -299,8 +332,9 @@ body {
     @include flex(flex, column, space-between, none);
     &:first-child {
       img {
-        width: 120px;
-        height: 18px;
+        width: 100%;
+        max-width: 120px;
+        min-height: 18px;
       }
     }
     li {
@@ -316,13 +350,15 @@ body {
     &:last-child {
       img {
         &:nth-child(1) {
-          width: 96px;
-          height: 17px;
+          width: 100%;
+          max-width: 96px;
+          max-height: 17px;
           margin-bottom: 20px;
         }
         &:nth-child(4) {
-          width: 120px;
-          height: 14px;
+          width: 100%;
+          max-width: 120px;
+          max-height: 14px;
           margin-bottom: 20px;
         }
       }
@@ -349,7 +385,7 @@ body {
   }
 
   &__line {
-    width: 100vw;
+    width: 100%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.3);
   }
@@ -388,8 +424,9 @@ body {
 
   &__social {
     img {
-      width: 38px;
-      height: 28px;
+      width: 100%;
+      max-width: 38px;
+      max-height: 28px;
     }
   }
 }
