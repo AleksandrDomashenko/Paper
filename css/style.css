@@ -87,18 +87,32 @@ h6 {
   font-weight: 400;
 }
 
-@media (max-width: 1470px) {
-  .body {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-}
-
 body {
   font-family: Roboto;
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (max-width: 1470px) {
+  .wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+    margin: 0 auto;
+  }
 }
 
 .wrapper {

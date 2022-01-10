@@ -6,7 +6,7 @@
 //файл с миксинами
 @import 'mixin.scss';
 // файл с медиа запросами
-@import 'media.scss';
+// @import 'media.scss';
 
 //переменные
 //шаблоны
@@ -17,6 +17,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 // wrapper
 .wrapper {
   min-height: 100%; //full screen
@@ -29,7 +30,6 @@ body {
 }
 .header {
   @include flex(flex, none, space-between, center);
-  // width: 95vw;
   margin: 30px auto 0 auto;
   &__leftside {
     @include flex(flex, none, none, center);
