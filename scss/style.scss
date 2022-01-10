@@ -6,7 +6,7 @@
 //файл с миксинами
 @import 'mixin.scss';
 // файл с медиа запросами
-// @import 'media.scss';
+@import 'media.scss';
 
 //переменные
 //шаблоны
@@ -18,10 +18,25 @@ body {
   margin: 0 auto;
 }
 
+// @media (max-width: 1470px) {
+//   .wrapper {
+//     width: 100%;
+//     margin: 0 auto;
+//     border: 1px solid #000;
+//   }
+// }
+// //телефон
+// @media (max-width: 1300px) {
+//   .wrapper {
+//     max-width: 992px;
+//     border: 1px solid #0f0;
+//     margin: 0 auto;
+//   }
+// }
+
 // wrapper
 .wrapper {
   min-height: 100%; //full screen
-  @include flex(flex, column, none, none);
   overflow-x: hidden;
 }
 // header
