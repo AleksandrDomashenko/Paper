@@ -5,6 +5,8 @@
 @import 'nulestyle.scss';
 //файл с миксинами
 @import 'mixin.scss';
+// файл с медиа запросами
+@import 'media.scss';
 //переменные
 //шаблоны
 ////////////////////////////////////////
@@ -89,11 +91,10 @@ body {
 .first-frame {
   &__row {
     margin-top: 155px;
-    @include flex(flex, row, space-between, center);
+    @include flex(flex, none, space-around, center);
   }
 
   &__column {
-    margin-right: 20px;
     margin-left: 40px;
     min-width: 380px;
     max-width: 390px;
