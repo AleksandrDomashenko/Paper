@@ -25,22 +25,20 @@
     @include flex(flex, none, space-between, center);
     flex-wrap: wrap;
     margin: 30px auto 0 auto;
-  }
-  @media (max-width: 800px) {
-    &__row {
+    @media (max-width: 992px) {
       display: flex;
       flex-direction: column;
       margin-top: 120px;
     }
   }
+
   &__leftside {
     @include flex(flex, none, none, center);
-  }
-  @media (max-width: 800px) {
-    &__leftside {
+    @media (max-width: 992px) {
       margin-bottom: 50px;
     }
   }
+
   &__we {
     img {
       width: 100%;
@@ -71,9 +69,7 @@
       max-width: 120px;
       max-height: 56px;
     }
-  }
-  @media (max-width: 800px) {
-    &__center {
+    @media (max-width: 992px) {
       margin-top: -100px;
     }
   }
@@ -107,9 +103,8 @@
     margin-top: 155px;
     @include flex(flex, none, none, center);
     overflow: hidden;
-  }
-  @media (max-width: 800px) {
-    &__row {
+
+    @media (max-width: 992px) {
       margin-top: 55px;
       @include flex(flex, column-reverse, none, center);
       overflow: hidden;
@@ -120,43 +115,32 @@
     margin-left: 40px;
     min-width: 380px;
     max-width: 390px;
-    @media (max-width: 800px) {
-      & {
-        margin-left: 0px;
-        text-align: center;
-        min-width: 280px;
-        max-width: 290px;
-      }
+    @media (max-width: 992px) {
+      margin-left: 0px;
+      text-align: center;
+      min-width: 280px;
+      max-width: 290px;
     }
   }
 
   &__title {
     @include font(80px, 80px, 1px, #161616, none);
-    @media (max-width: 800px) {
-      & {
-        margin-top: 50px;
-        // text-align: center;
-        @include font(20px, 15px, 1px, #161616, 700);
-      }
+    @media (max-width: 992px) {
+      margin-top: 50px;
+      @include font(20px, 15px, 1px, #161616, 700);
     }
   }
 
   &__subtitle {
     margin-top: 36px;
-    @media (max-width: 800px) {
-      & {
-      }
-    }
   }
 
   &__buttons {
     margin-top: 40px;
     @include flex(flex, none, none, center);
-    @media (max-width: 800px) {
-      & {
-        margin-top: 25px;
-        @include flex(flex, none, center, center);
-      }
+    @media (max-width: 992px) {
+      margin-top: 25px;
+      @include flex(flex, none, center, center);
     }
   }
 
@@ -168,10 +152,8 @@
     a {
       color: #fff;
     }
-    @media (max-width: 800px) {
-      & {
-        display: none;
-      }
+    @media (max-width: 992px) {
+      display: none;
     }
   }
 
@@ -194,59 +176,100 @@
       max-width: 905px;
       max-height: 679px;
     }
-    @media (max-width: 800px) {
-      & {
-        border: 10px solid #000;
-        border-radius: 10px;
-        position: static;
-        img {
-          width: 100%;
-          max-width: 600px;
-          max-height: 379px;
-        }
+    @media (max-width: 992px) {
+      border: 10px solid #000;
+      border-radius: 10px;
+      position: static;
+      img {
+        max-width: 600px;
+        max-height: 379px;
       }
     }
   }
 }
 .subtitle {
   @include font(20px, 28px, none, #161616, none);
-  @media (max-width: 800px) {
-    & {
-      @include font(14px, 25px, none, #161616, none);
-    }
+  @media (max-width: 992px) {
+    @include font(14px, 25px, none, #161616, none);
   }
 }
 
 // second frame ------------------------------------------------------------------------
 .second-frame {
-  margin-top: 200px;
-  background-image: url(../img/second_frame/01.png);
-  background-repeat: no-repeat;
-  background-size: 100% 810px;
+  margin: 200px auto 0 auto;
+  @media (max-width: 992px) {
+    margin: 50px auto 0 auto;
+    background-size: 100% 300px;
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 810px;
+      padding-right: 15px;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      margin: 0 auto;
+      // padding-right: 15px;
+      img {
+        height: 300px;
+      }
+      opacity: 0.5;
+    }
+  }
 
   &__column {
     margin-left: 80px;
     padding-top: 256px;
     padding-bottom: 261px;
+    @media (max-width: 992px) {
+      margin-left: 20px;
+      padding-top: 50px;
+      padding-bottom: 0px;
+    }
   }
 
   &__title {
     @include font(49px, 54px, 1px, #fff, none);
     margin-bottom: 46px;
+    @media (max-width: 992px) {
+      @include font(20px, 25px, 1px, #000, none);
+    }
   }
 
   &__subtitle {
     color: #fff;
+    @media (max-width: 992px) {
+      color: #000;
+    }
   }
 }
 
 // three frame -------------------------------------------------------------------------
 .three-frame {
   padding-top: 80px;
-  background-image: url(../img/three_frame/01.png);
-  background-repeat: no-repeat;
-  background-size: 100% 948px;
   min-height: 150%;
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 948px;
+      padding-right: 15px;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      margin: 0 auto;
+      // padding-right: 15px;
+      img {
+        height: 300px;
+      }
+    }
+  }
 
   &__column {
     @include flex(flex, column, space-between, center);
@@ -256,12 +279,18 @@
   &__title {
     margin-top: 35px;
     @include font(51px, 54px, 1px, #161616, none);
+    @media (max-width: 992px) {
+      @include font(20px, 15px, 1px, #161616, 700);
+    }
   }
 
   &__subtitle {
     margin-top: 30px;
     margin-bottom: 515px;
-    flex: 1 1 auto;
+    @media (max-width: 992px) {
+      margin-top: 15px;
+      margin-bottom: 70px;
+    }
   }
 
   &__pallet {
@@ -278,15 +307,24 @@
     @include flex(flex, column, none, center);
     text-align: center;
     padding-top: 135px;
+    @media (max-width: 992px) {
+      padding-top: 50px;
+    }
   }
 
   &__title {
     @include font(54px, 54px, 1px, #fff, none);
+    @media (max-width: 992px) {
+      @include font(20px, 20px, 1px, #fff, 700);
+    }
   }
 
   &__subtitle {
     margin-top: 35px;
     color: #fff;
+    @media (max-width: 992px) {
+      margin-top: 20px;
+    }
   }
 
   &__img {
@@ -295,14 +333,24 @@
     img {
       width: 100%;
     }
+    @media (max-width: 992px) {
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
   }
 }
 
 // five frame --------------------------------------------------------------------------
 .five-frame {
   margin-top: 85px;
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
   &__row {
     @include flex(flex, none, space-around, center);
+    @media (max-width: 992px) {
+      @include flex(flex, column, space-around, center);
+    }
   }
 
   &__img {
@@ -313,28 +361,50 @@
       max-width: 780px;
       max-height: 585px;
     }
+    @media (max-width: 992px) {
+      border: 10px solid #000;
+      border-radius: 10px;
+    }
   }
 
   &__subtitle {
     margin-top: 35px;
+    @media (max-width: 992px) {
+      margin-top: 15px;
+      text-align: center;
+    }
   }
 }
 .title {
   @include font(52px, 54px, 1px, #161616, none);
+  @media (max-width: 992px) {
+    margin-top: 20px;
+    text-align: center;
+    @include font(25px, 30px, 1px, #161616, 700);
+  }
 }
 
 // six frame ---------------------------------------------------------------------------
 .six-frame {
   margin-top: 85px;
-
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
   &__row {
     @include flex(flex, none, space-around, center);
     overflow: hidden;
-    overflow-y: hidden;
+    @media (max-width: 992px) {
+      @include flex(flex, column-reverse, space-around, center);
+      overflow: auto;
+    }
   }
 
   &__subtitle {
     margin-top: 35px;
+    @media (max-width: 992px) {
+      margin-top: 15px;
+      text-align: center;
+    }
   }
 
   &__img {
@@ -345,6 +415,11 @@
       width: 100%;
       max-width: 780px;
       max-height: 585px;
+    }
+    @media (max-width: 992px) {
+      margin-right: 0px;
+      border: 10px solid #000;
+      border-radius: 10px;
     }
   }
 
@@ -358,6 +433,9 @@
       max-width: 180px;
       max-height: 367px;
     }
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 }
 
@@ -368,6 +446,10 @@
   &__img {
     padding-top: 200px;
     margin-bottom: 26px;
+    @media (max-width: 992px) {
+      padding-top: 75px;
+      margin-bottom: 26px;
+    }
   }
 
   &__text {
@@ -380,10 +462,14 @@
     background-color: #161616;
     border-radius: 20px;
 
-    max-width: 10%;
+    width: 150px;
     margin: 31px auto 215px auto;
     a {
       @include font(15px, 19px, none, #fff, 700);
+    }
+    @media (max-width: 992px) {
+      width: 120px;
+      margin: 31px auto 50px auto;
     }
   }
 }
