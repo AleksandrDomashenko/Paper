@@ -14,9 +14,12 @@
 
 // header ------------------------------------------------------------------------------
 .header {
-  @include flex(flex, none, space-between, center);
-  margin: 30px auto 0 auto;
+  &__row {
+    @include flex(flex, none, space-between, center);
+    margin: 30px auto 0 auto;
+  }
   &__leftside {
+    width: 10.5%;
     @include flex(flex, none, none, center);
     img {
       width: 100%;
@@ -24,7 +27,6 @@
       max-height: 20px;
       margin-right: 20px;
     }
-    width: 10.5%;
   }
 
   &__aboutus {
@@ -78,6 +80,7 @@
   &__row {
     margin-top: 155px;
     @include flex(flex, none, space-around, center);
+    overflow: hidden;
   }
 
   &__column {
@@ -218,7 +221,6 @@
 
 // five frame --------------------------------------------------------------------------
 .five-frame {
-  border: 10px solid #0f0;
   margin-top: 85px;
   &__row {
     @include flex(flex, none, space-around, center);
@@ -249,6 +251,8 @@
 
   &__row {
     @include flex(flex, none, space-around, center);
+    overflow: hidden;
+    overflow-y: hidden;
   }
 
   &__subtitle {
