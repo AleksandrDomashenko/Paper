@@ -207,10 +207,15 @@ h6 {
   letter-spacing: none;
   color: #5c5c5c;
   font-weight: none;
+  margin-right: 20px;
 }
 
 .header__rightside a:hover {
   text-decoration: underline;
+}
+
+.header__rightside a:nth-child(2) {
+  margin-right: 10px;
 }
 
 .header__rightside a:last-child {
@@ -422,6 +427,8 @@ h6 {
 .second-frame__background {
   position: absolute;
   z-index: -1;
+  width: 100%;
+  padding-right: 30px;
 }
 
 .second-frame__background img {
@@ -431,7 +438,6 @@ h6 {
 
 @media (max-width: 992px) {
   .second-frame__background {
-    width: 91%;
     margin: 0 auto;
     opacity: 0.5;
   }
@@ -469,7 +475,8 @@ h6 {
     line-height: 25px;
     letter-spacing: 1px;
     color: #000;
-    font-weight: none;
+    font-weight: 700;
+    margin-left: 15px;
   }
 }
 
@@ -480,6 +487,7 @@ h6 {
 @media (max-width: 992px) {
   .second-frame__subtitle {
     color: #000;
+    margin: 0 15px;
   }
 }
 
@@ -490,6 +498,8 @@ h6 {
 .three-frame__background {
   position: absolute;
   z-index: -1;
+  width: 100%;
+  padding-right: 30px;
 }
 
 .three-frame__background img {
@@ -499,7 +509,7 @@ h6 {
 
 @media (max-width: 992px) {
   .three-frame__background {
-    width: 91%;
+    width: 100%;
     margin: 0 auto;
   }
   .three-frame__background img {
@@ -550,8 +560,7 @@ h6 {
 
 @media (max-width: 992px) {
   .three-frame__subtitle {
-    margin-top: 15px;
-    margin-bottom: 70px;
+    margin: 15px 15px 70px 15px;
   }
 }
 
