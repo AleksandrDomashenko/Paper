@@ -97,3 +97,9 @@ h6 {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

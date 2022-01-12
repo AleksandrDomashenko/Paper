@@ -6,12 +6,19 @@
 //файл с миксинами
 @import 'mixin.scss';
 
+// wrapper ----------------------------------------------------------
+.wrapper {
+  min-height: 100%; //full screen
+  overflow-x: hidden;
+}
+.content {
+  flex: 1 1 auto;
+}
 .container {
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
 // header ------------------------------------------------------------------------------
 .header {
   &__row {
@@ -315,9 +322,7 @@
     @include flex(flex, none, space-between, flex-start);
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-left: 155px;
-    padding-right: 155px;
+    padding: 80px 155px 0 155px;
   }
 
   &__column {
