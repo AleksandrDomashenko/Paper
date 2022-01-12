@@ -77,9 +77,12 @@
   &__rightside {
     a {
       @include font(15px, 15px, none, #5c5c5c, none);
-      // margin-right: 20px;
+      margin-right: 20px;
       &:hover {
         text-decoration: underline;
+      }
+      &:nth-child(2) {
+        margin-right: 10px;
       }
       &:last-child {
         background-color: #000;
@@ -196,6 +199,7 @@
 // second frame ------------------------------------------------------------------------
 .second-frame {
   margin: 200px auto 0 auto;
+
   @media (max-width: 992px) {
     margin: 50px auto 0 auto;
     background-size: 100% 300px;
@@ -204,12 +208,13 @@
   &__background {
     position: absolute;
     z-index: -1;
+    width: 100%;
+    padding-right: 30px;
     img {
       width: 100%;
       height: 810px;
     }
     @media (max-width: 992px) {
-      width: 91%;
       margin: 0 auto;
       img {
         height: 300px;
@@ -233,7 +238,8 @@
     @include font(49px, 54px, 1px, #fff, none);
     margin-bottom: 46px;
     @media (max-width: 992px) {
-      @include font(20px, 25px, 1px, #000, none);
+      @include font(20px, 25px, 1px, #000, 700);
+      margin-left: 15px;
     }
   }
 
@@ -241,6 +247,7 @@
     color: #fff;
     @media (max-width: 992px) {
       color: #000;
+      margin: 0 15px;
     }
   }
 }
@@ -252,12 +259,14 @@
   &__background {
     position: absolute;
     z-index: -1;
+    width: 100%;
+    padding-right: 30px;
     img {
       width: 100%;
       height: 948px;
     }
     @media (max-width: 992px) {
-      width: 91%;
+      width: 100%;
       margin: 0 auto;
       img {
         height: 300px;
@@ -282,8 +291,7 @@
     margin-top: 30px;
     margin-bottom: 515px;
     @media (max-width: 992px) {
-      margin-top: 15px;
-      margin-bottom: 70px;
+      margin: 15px 15px 70px 15px;
     }
   }
 
