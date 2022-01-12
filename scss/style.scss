@@ -13,13 +13,7 @@ body {
 }
 
 // wrapper
-.wrapper {
-  min-height: 100%; //full screen
-  overflow-x: hidden;
-}
-.content {
-  flex: 1 1 auto;
-}
+
 // header ------------------------------------------------------------------------------
 .header {
   @include flex(flex, none, space-between, center);
