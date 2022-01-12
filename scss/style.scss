@@ -5,44 +5,22 @@
 @import 'nulestyle.scss';
 //файл с миксинами
 @import 'mixin.scss';
-// файл с медиа запросами
-@import 'media.scss';
 
-//переменные
-//шаблоны
-////////////////////////////////////////
 body {
-  font-family: Roboto;
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-// @media (max-width: 1470px) {
-//   .wrapper {
-//     width: 100%;
-//     margin: 0 auto;
-//     border: 1px solid #000;
-//   }
-// }
-// //телефон
-// @media (max-width: 1300px) {
-//   .wrapper {
-//     max-width: 992px;
-//     border: 1px solid #0f0;
-//     margin: 0 auto;
-//   }
-// }
 
 // wrapper
 .wrapper {
   min-height: 100%; //full screen
   overflow-x: hidden;
 }
-// header
 .content {
   flex: 1 1 auto;
 }
+// header ------------------------------------------------------------------------------
 .header {
   @include flex(flex, none, space-between, center);
   margin: 30px auto 0 auto;
@@ -103,7 +81,7 @@ body {
   }
 }
 
-// first frame
+// first frame -------------------------------------------------------------------------
 .first-frame {
   &__row {
     margin-top: 155px;
@@ -162,7 +140,7 @@ body {
   }
 }
 
-// second frame
+// second frame ------------------------------------------------------------------------
 .second-frame {
   margin-top: 200px;
   background-image: url(../img/second_frame/01.png);
@@ -185,7 +163,7 @@ body {
   }
 }
 
-// three frame
+// three frame -------------------------------------------------------------------------
 .three-frame {
   padding-top: 80px;
   min-height: 948px;
@@ -218,7 +196,7 @@ body {
   }
 }
 
-// four frame
+// four frame --------------------------------------------------------------------------
 .four-frame {
   background-color: #161616;
   &__column {
@@ -245,7 +223,7 @@ body {
   }
 }
 
-// five frame
+// five frame --------------------------------------------------------------------------
 .five-frame {
   margin-top: 85px;
   &__row {
@@ -273,7 +251,7 @@ body {
   @include font(20px, 28px, none, #161616, none);
 }
 
-// six frame
+// six frame ---------------------------------------------------------------------------
 .six-frame {
   margin-top: 85px;
 
@@ -309,7 +287,7 @@ body {
   }
 }
 
-// seven-frame
+// seven-frame -------------------------------------------------------------------------
 .seven-frame {
   text-align: center;
 
@@ -336,7 +314,7 @@ body {
   }
 }
 
-// footer
+// footer ------------------------------------------------------------------------------
 .footer {
   background-color: #161616;
   &__row {
