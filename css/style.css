@@ -39,6 +39,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: Roboto;
 }
 
 input,
@@ -87,13 +88,6 @@ h6 {
   font-weight: 400;
 }
 
-body {
-  font-family: Roboto;
-  max-width: 1470px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .wrapper {
   min-height: 100%;
   overflow-x: hidden;
@@ -103,6 +97,12 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
@@ -234,11 +234,6 @@ body {
 
 .first-frame__subtitle {
   margin-top: 36px;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: none;
-  color: #161616;
-  font-weight: none;
 }
 
 .first-frame__buttons {
@@ -292,6 +287,14 @@ body {
   max-height: 679px;
 }
 
+.subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: none;
+  color: #161616;
+  font-weight: none;
+}
+
 .second-frame {
   margin-top: 200px;
   background-image: url(../img/second_frame/01.png);
@@ -315,11 +318,7 @@ body {
 }
 
 .second-frame__subtitle {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: none;
   color: #fff;
-  font-weight: none;
 }
 
 .three-frame {
@@ -359,11 +358,6 @@ body {
 
 .three-frame__subtitle {
   margin-top: 30px;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: none;
-  color: #161616;
-  font-weight: none;
   margin-bottom: 515px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -406,11 +400,7 @@ body {
 
 .four-frame__subtitle {
   margin-top: 35px;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: none;
   color: #fff;
-  font-weight: none;
 }
 
 .four-frame__img {
@@ -423,6 +413,7 @@ body {
 }
 
 .five-frame {
+  border: 10px solid #0f0;
   margin-top: 85px;
 }
 
@@ -453,6 +444,7 @@ body {
 }
 
 .five-frame__subtitle {
+  border: 10px solid #0f0;
   margin-top: 35px;
 }
 
@@ -460,14 +452,6 @@ body {
   font-size: 52px;
   line-height: 54px;
   letter-spacing: 1px;
-  color: #161616;
-  font-weight: none;
-}
-
-.subtitle {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: none;
   color: #161616;
   font-weight: none;
 }
