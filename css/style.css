@@ -324,11 +324,10 @@ h6 {
 
 .three-frame {
   padding-top: 80px;
-  min-height: 948px;
   background-image: url(../img/three_frame/01.png);
   background-repeat: no-repeat;
   background-size: 100% 948px;
-  min-height: 100%;
+  min-height: 150%;
 }
 
 .three-frame__column {
@@ -444,7 +443,6 @@ h6 {
 }
 
 .five-frame__subtitle {
-  border: 10px solid #0f0;
   margin-top: 35px;
 }
 
@@ -559,9 +557,11 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 80px;
+  padding-left: 155px;
+  padding-right: 155px;
 }
 
 .footer__column {
