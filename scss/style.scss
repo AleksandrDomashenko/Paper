@@ -12,8 +12,6 @@ body {
   margin: 0 auto;
 }
 
-// wrapper
-
 // header ------------------------------------------------------------------------------
 .header {
   @include flex(flex, none, space-between, center);
