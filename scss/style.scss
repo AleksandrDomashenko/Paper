@@ -23,11 +23,25 @@
 .header {
   &__row {
     @include flex(flex, none, space-between, center);
+    flex-wrap: wrap;
     margin: 30px auto 0 auto;
   }
+  @media (max-width: 800px) {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      margin-top: 120px;
+    }
+  }
   &__leftside {
-    width: 10.5%;
     @include flex(flex, none, none, center);
+  }
+  @media (max-width: 800px) {
+    &__leftside {
+      margin-bottom: 50px;
+    }
+  }
+  &__we {
     img {
       width: 100%;
       max-width: 45px;
@@ -39,7 +53,7 @@
   &__aboutus {
     @include font(15px, 15px, none, #5c5c5c, none);
     a {
-      color: #5c5c5c;
+      color: inherit;
       &:hover {
         text-decoration: underline;
       }
@@ -56,6 +70,11 @@
       width: 100%;
       max-width: 120px;
       max-height: 56px;
+    }
+  }
+  @media (max-width: 800px) {
+    &__center {
+      margin-top: -100px;
     }
   }
 
@@ -86,27 +105,59 @@
 .first-frame {
   &__row {
     margin-top: 155px;
-    @include flex(flex, none, space-around, center);
+    @include flex(flex, none, none, center);
     overflow: hidden;
+  }
+  @media (max-width: 800px) {
+    &__row {
+      margin-top: 55px;
+      @include flex(flex, column-reverse, none, center);
+      overflow: hidden;
+    }
   }
 
   &__column {
     margin-left: 40px;
     min-width: 380px;
     max-width: 390px;
+    @media (max-width: 800px) {
+      & {
+        margin-left: 0px;
+        text-align: center;
+        min-width: 280px;
+        max-width: 290px;
+      }
+    }
   }
 
   &__title {
     @include font(80px, 80px, 1px, #161616, none);
+    @media (max-width: 800px) {
+      & {
+        margin-top: 50px;
+        // text-align: center;
+        @include font(20px, 15px, 1px, #161616, 700);
+      }
+    }
   }
 
   &__subtitle {
     margin-top: 36px;
+    @media (max-width: 800px) {
+      & {
+      }
+    }
   }
 
   &__buttons {
     margin-top: 40px;
     @include flex(flex, none, none, center);
+    @media (max-width: 800px) {
+      & {
+        margin-top: 25px;
+        @include flex(flex, none, center, center);
+      }
+    }
   }
 
   &__download {
@@ -116,6 +167,11 @@
     border-radius: 25px;
     a {
       color: #fff;
+    }
+    @media (max-width: 800px) {
+      & {
+        display: none;
+      }
     }
   }
 
@@ -138,10 +194,27 @@
       max-width: 905px;
       max-height: 679px;
     }
+    @media (max-width: 800px) {
+      & {
+        border: 10px solid #000;
+        border-radius: 10px;
+        position: static;
+        img {
+          width: 100%;
+          max-width: 600px;
+          max-height: 379px;
+        }
+      }
+    }
   }
 }
 .subtitle {
   @include font(20px, 28px, none, #161616, none);
+  @media (max-width: 800px) {
+    & {
+      @include font(14px, 25px, none, #161616, none);
+    }
+  }
 }
 
 // second frame ------------------------------------------------------------------------
