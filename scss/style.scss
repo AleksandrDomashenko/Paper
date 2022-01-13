@@ -171,7 +171,7 @@
   &__image {
     border: 30px solid #000;
     border-radius: 30px;
-    position: relative;
+
     right: -150px;
     img {
       width: 100%;
@@ -202,20 +202,14 @@
 
   @media (max-width: 992px) {
     margin: 50px auto 0 auto;
-    background-size: 100% 300px;
   }
 
   &__background {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    padding-right: 30px;
     img {
       width: 100%;
       height: 810px;
     }
     @media (max-width: 992px) {
-      margin: 0 auto;
       img {
         height: 300px;
       }
@@ -224,13 +218,12 @@
   }
 
   &__column {
-    margin-left: 80px;
-    padding-top: 256px;
-    padding-bottom: 261px;
+    position: absolute;
+    margin: -600px 0 0 80px;
     @media (max-width: 992px) {
-      margin-left: 20px;
-      padding-top: 50px;
-      padding-bottom: 0px;
+      margin: -300px 0 0 20px;
+      padding: 50px 0px 27px 0;
+      min-width: 264px;
     }
   }
 
@@ -254,44 +247,32 @@
 
 // three frame -------------------------------------------------------------------------
 .three-frame {
-  padding-top: 80px;
-
-  &__background {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    padding-right: 30px;
-    img {
-      width: 100%;
-      height: 948px;
-    }
-    @media (max-width: 992px) {
-      width: 100%;
-      margin: 0 auto;
-      img {
-        height: 300px;
-      }
-    }
-  }
+  margin-top: 80px;
 
   &__column {
-    @include flex(flex, column, space-between, center);
+    background: url('../img/three_frame/01.png') 0 0/ 100% 100% no-repeat;
+    padding-top: 80px;
     text-align: center;
+    @media (max-width: 992px) {
+      padding-top: 40px;
+    }
   }
 
   &__title {
     margin-top: 35px;
     @include font(51px, 54px, 1px, #161616, none);
     @media (max-width: 992px) {
-      @include font(20px, 15px, 1px, #161616, 700);
+      margin-top: 0px;
+      @include font(20px, 20px, 1px, #161616, 700);
     }
   }
 
   &__subtitle {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 515px;
+    padding: 0 15px;
     @media (max-width: 992px) {
-      margin: 15px 15px 70px 15px;
+      margin-bottom: 100px;
     }
   }
 
@@ -304,9 +285,8 @@
 
 // four frame --------------------------------------------------------------------------
 .four-frame {
-  background-color: #161616;
   &__column {
-    @include flex(flex, column, none, center);
+    background-color: #161616;
     text-align: center;
     padding-top: 135px;
     @media (max-width: 992px) {
@@ -345,9 +325,6 @@
 // five frame --------------------------------------------------------------------------
 .five-frame {
   margin-top: 85px;
-  @media (max-width: 992px) {
-    margin-top: 30px;
-  }
   &__row {
     @include flex(flex, none, space-around, center);
     @media (max-width: 992px) {
@@ -367,6 +344,10 @@
       border: 10px solid #000;
       border-radius: 10px;
     }
+  }
+
+  &__column {
+    padding-left: 15px;
   }
 
   &__subtitle {
@@ -389,9 +370,6 @@
 // six frame ---------------------------------------------------------------------------
 .six-frame {
   margin-top: 85px;
-  @media (max-width: 992px) {
-    margin-top: 30px;
-  }
   &__row {
     @include flex(flex, none, space-around, center);
     overflow: hidden;
@@ -399,6 +377,10 @@
       @include flex(flex, column-reverse, space-around, center);
       overflow: auto;
     }
+  }
+
+  &__column {
+    padding-right: 15px;
   }
 
   &__subtitle {

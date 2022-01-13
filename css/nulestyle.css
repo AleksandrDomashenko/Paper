@@ -86,20 +86,3 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-
-.wrapper {
-  min-height: 100%;
-  overflow-x: hidden;
-}
-
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.container {
-  max-width: 1470px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
