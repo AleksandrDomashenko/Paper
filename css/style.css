@@ -852,7 +852,6 @@ h6 {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 100%;
-  margin: 0 auto;
   padding: 80px 155px 0 155px;
 }
 
@@ -910,7 +909,6 @@ h6 {
 
 @media (max-width: 992px) {
   .footer__column {
-    display: inline-block;
     text-align: center;
   }
 }
@@ -925,6 +923,9 @@ h6 {
   .footer__column:first-child {
     margin: 20px 0 10px 0;
   }
+  .footer__column:first-child img {
+    margin: 0 auto;
+  }
 }
 
 .footer__column li {
@@ -936,18 +937,24 @@ h6 {
   margin-bottom: 24px;
 }
 
-@media (max-width: 992px) {
-  .footer__column li {
-    display: none;
-  }
-}
-
 .footer__column li a {
   color: #fff;
 }
 
 .footer__column li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .footer__column li {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__column:last-child img {
+    margin: 0 auto;
+  }
 }
 
 .footer__column:last-child img:nth-child(1) {
@@ -987,6 +994,12 @@ h6 {
   text-decoration: underline;
 }
 
+@media (max-width: 992px) {
+  .footer__column:last-child a:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .footer__namecolumn {
   font-size: 18px;
   line-height: 19px;
@@ -999,6 +1012,13 @@ h6 {
 .footer__dropdown {
   width: 125px;
   margin: 0 auto 50px auto;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .footer__dropdown {
+    display: block;
+  }
 }
 
 .footer__products-dropdown, .footer__aboutus-dropdown, .footer__support-dropdown {
@@ -1029,7 +1049,6 @@ h6 {
   display: none;
   position: relative;
   width: 120px;
-  top: 5px;
   background-color: #353535;
   border-radius: 10px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
