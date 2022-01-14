@@ -195,51 +195,89 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__row">
-            <div class="footer__column">
-              <img src="./img/footer/01.png" alt="" />
-            </div>
-            <div class="footer__column">
-              <ul>
-                <li class="footer__namecolumn">Products</li>
-                <li><a href="#">Get WeTransfer Pro</a></li>
-                <li><a href="#">WeTransfer</a></li>
-                <li><a href="#">Paste®</a></li>
-                <li><a href="#">Collect</a></li>
-                <li><a href="#">Paper®</a></li>
-              </ul>
-            </div>
-            <div class="footer__column">
-              <ul>
-                <li class="footer__namecolumn">About us</li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">B-Corp</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Newsroom</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="footer__column">
-              <ul>
-                <li class="footer__namecolumn">Support</li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-              </ul>
-            </div>
-            <div class="footer__column">
-              <img src="./img/footer/02.png" alt="" />
-              <p>
-                Discover the best art, photography, <br />
-                music and more
-              </p>
-              <a href="#">Get inspired</a>
-              <img src="./img/footer/03.png" alt="" />
-              <p>
-                Dive into our annual report on <br />
-                creativity
-              </p>
-              <a href="#">Get the lowdown</a>
+            <div class="footer__columns">
+              <div class="footer__column">
+                <img src="./img/footer/01.png" alt="" />
+              </div>
+              <div class="footer__column">
+                <!-- dropdown-------------------------------- -->
+                <div class="footer__dropdown">
+                  <div class="footer__products-dropdown">
+                    <button class="footer__products-dropbtn">Products</button>
+                    <div class="footer__products-dropdown-content">
+                      <a href="#">Get WeTransfer Pro</a>
+                      <a href="#">WeTransfer</a>
+                      <a href="#">Paste®</a>
+                      <a href="#">Collect</a>
+                      <a href="#">Paper®</a>
+                    </div>
+                  </div>
+                  <div class="footer__aboutus-dropdown">
+                    <button class="footer__aboutus-dropbtn">About us</button>
+                    <div class="footer__aboutus-dropdown-content">
+                      <a href="#">Company</a>
+                      <a href="#">Advertising</a>
+                      <a href="#">B-Corp</a>
+                      <a href="#">Jobs</a>
+                      <a href="#">Newsroom</a>
+                      <a href="#">Blog</a>
+                    </div>
+                  </div>
+                  <div class="footer__support-dropdown">
+                    <button class="footer__support-dropbtn">Support</button>
+                    <div class="footer__support-dropdown-content">
+                      <a href="#">Help</a>
+                      <a href="#">Terms</a>
+                      <a href="#">Privacy</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---------------------------------------- -->
+                <ul>
+                  <li class="footer__namecolumn">Products</li>
+                  <li><a href="#">Get WeTransfer Pro</a></li>
+                  <li><a href="#">WeTransfer</a></li>
+                  <li><a href="#">Paste®</a></li>
+                  <li><a href="#">Collect</a></li>
+                  <li><a href="#">Paper®</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <ul>
+                  <li class="footer__namecolumn">About us</li>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">B-Corp</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Newsroom</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <ul>
+                  <li class="footer__namecolumn">Support</li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <img src="./img/footer/02.png" alt="" />
+                <p>
+                  Discover the best art, photography, <br />
+                  music and more
+                </p>
+                <a href="#"
+                  >Get inspired <br />
+                  <br
+                /></a>
+                <img src="./img/footer/03.png" alt="" />
+                <p>
+                  Dive into our annual report on <br />
+                  creativity
+                </p>
+                <a href="#">Get the lowdown</a>
+              </div>
             </div>
           </div>
         </div>
@@ -253,8 +291,8 @@
                   <option value="Russian">Russian</option>
                 </select>
               </form>
-              <div class="footer__copyright">© 2021 WeTransfer</div>
             </div>
+            <div class="footer__copyright">© 2021 WeTransfer</div>
             <div class="footer__social">
               <a href="#"><img src="./img/footer/04.png" alt="" /></a>
               <a href="#"><img src="./img/footer/05.png" alt="" /></a>
