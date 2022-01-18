@@ -472,7 +472,6 @@
   &__row {
     @include flex(flex, none, space-between, flex-start);
     max-width: 100%;
-    // margin: 0 auto;
     padding: 80px 155px 0 155px;
     @media (max-width: 992px) {
       margin: 10px 10px;
@@ -509,6 +508,12 @@
         }
       }
     }
+    &:nth-child(2) {
+      margin-right: -90px;
+      @media (max-width: 992px) {
+        margin-right: 0;
+      }
+    }
     li {
       @include font(none, 15px, none, none, none);
       a {
@@ -534,6 +539,9 @@
           max-width: 96px;
           max-height: 17px;
           margin-bottom: 20px;
+          @media (max-width: 992px) {
+            margin-top: 30px;
+          }
         }
         &:nth-child(4) {
           width: 100%;
@@ -568,19 +576,11 @@
   }
 
   &__dropdown {
-    width: 125px;
-    margin: 0 auto 50px auto;
-    display: none;
+    width: 200px;
+    margin: 0 auto 20px auto;
     @media (max-width: 992px) {
       display: block;
     }
-  }
-
-  &__products-dropdown,
-  &__aboutus-dropdown,
-  &__support-dropdown {
-    display: contents;
-    margin: 0 auto;
   }
 
   &__products-dropbtn,
@@ -588,12 +588,13 @@
   &__support-dropbtn {
     display: none;
     @media (max-width: 992px) {
+      margin: 10px auto;
       display: block;
     }
-    min-width: 120px;
+    min-width: 100%;
     background-color: #353535;
     border-radius: 10px;
-    margin: 20px 24px 0 0;
+    margin-top: 20px;
     color: white;
     border: none;
     cursor: pointer;
@@ -606,10 +607,11 @@
   &__support-dropdown-content {
     display: none;
     position: relative;
+    top: -44.5px;
+    left: 40px;
     width: 120px;
     background-color: #353535;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     a {
       color: #fff;
@@ -621,21 +623,99 @@
       &:hover {
         background-color: #202020;
       }
+      border-radius: 10px;
     }
   }
+
   &__products-dropdown:hover {
     .footer__products-dropdown-content {
       display: block;
+      animation: growDown 500ms ease-in-out forwards;
+      transform-origin: center top;
+      margin-bottom: -45px;
+    }
+    .footer__products-dropbtn {
+      min-width: 120px;
+      transition: 0.5s;
+    }
+  }
+  &__products-dropdown:not(:hover) {
+    .footer__products-dropdown-content {
+      display: none;
+      animation: growUp 500ms ease-in-out forwards;
+      transform-origin: center top;
+      margin-bottom: -45px;
+    }
+    .footer__products-dropbtn {
+      transition: 0.5s;
     }
   }
   &__aboutus-dropdown:hover {
     .footer__aboutus-dropdown-content {
       display: block;
+      animation: growDown 500ms ease-in-out backwards;
+      transform-origin: top center;
+      margin-bottom: -45px;
+    }
+    .footer__aboutus-dropbtn {
+      min-width: 120px;
+      transition: 0.5s;
+    }
+  }
+  &__aboutus-dropdown:not(:hover) {
+    .footer__aboutus-dropdown-content {
+      display: none;
+      animation: growUp 500ms ease-in-out forwards;
+      transform-origin: center top;
+      margin-bottom: -45px;
+    }
+    .footer__aboutus-dropbtn {
+      transition: 0.5s;
     }
   }
   &__support-dropdown:hover {
     .footer__support-dropdown-content {
       display: block;
+      animation: growDown 500ms ease-in-out forwards;
+      transform-origin: top center;
+      margin-bottom: -70px;
+    }
+    .footer__support-dropbtn {
+      min-width: 120px;
+      transition: 0.5s;
+    }
+  }
+  &__support-dropdown:not(:hover) {
+    .footer__support-dropdown-content {
+      display: none;
+      // animation: growUp 500ms ease-in-out forwards;
+      // transform-origin: center top;
+      // margin-bottom: -45px;
+    }
+    .footer__support-dropbtn {
+      transition: 0.5s;
+    }
+  }
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes growUp {
+    0% {
+      transform: scaleY(1);
+    }
+    80% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(0);
     }
   }
 
